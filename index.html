@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Películas favoritas</title>
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- <img class="bannerArribaAbajo" src="assets/bannerArribaAbajo.gif" alt=""> -->
+
+      <h1>Películas favoritas</h1>
+      <div></div>
+    </header>
+
+    <div id="padreContenidoWebConBanner">
+      <img class="banner" src="assets/bannerDer.png" alt="" />
+      <div class="contenidoCentral">
+        <section id="padreFormulario">
+          <figcaption>
+            <img
+              id="imagenForm"
+              src="assets/Cine Cuenta Atras GIF by ibluemedia.gif"
+              alt=""
+            />
+            <p></p>
+          </figcaption>
+
+          <div>
+            <form id="formularioPeliculas" action="">
+              <label for="titulo">Título</label>
+              <input type="text" id="titulo" name="titulo" required />
+
+              <label for="anno">Fecha estreno (año)</label>
+              <input type="number" id="anno" name="anno" required />
+
+              <label for="descripcion">Descripción</label>
+              <input type="text" id="descripcion" name="descripcion" required />
+
+              <label for="urlFoto">Url foto</label>
+              <input type="url" id="urlFoto" name="urlFoto" />
+
+              <select name="genero" id="genero">
+                <option value="" selected disabled>Género</option>
+                <option value="Acción">Acción</option>
+                <option value="Romantica">Romántica</option>
+                <option value="Terror">Terror</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Drama">Drama</option>
+              </select>
+
+              <button type="submit">Añadir película</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="padreTablas">
+          <table id="tablaPeliculas">
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Título</th>
+                <th>Año</th>
+                <th>Descripción</th>
+                <th>Género</th>
+              </tr>
+            </thead>
+
+            <tbody id="cuerpoTabla">
+              <tr>
+                <td>
+                  <img src="assets/gladiator.jpg" width="80" />
+                </td>
+                <td class="tituloCelda">Gladiator</td>
+                <td class="annoCelda">2000</td>
+                <td class="descripcionCelda">
+                  Un general romano busca venganza.
+                </td>
+
+                <td class="annoCelda">Acción</td>
+                <td>
+                  <button class="btnEditar">
+                    <img class="iconos" src="assets/editar.png" alt="" />
+                  </button>
+
+                  <button class="btnEliminar">
+                    <img class="iconos" src="assets/delete.png" alt="" />
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img
+                    src="assets/lotr.jpg"
+                    alt="El Señor de los Anillos: El Retorno del Rey"
+                    width="80"
+                  />
+                </td>
+                <td class="tituloCelda">
+                  El Señor de los Anillos: El Retorno del Rey
+                </td>
+                <td class="annoCelda">2003</td>
+                <td class="descripcionCelda">
+                  Frodo y Sam continúan su viaje hacia Mordor para destruir el
+                  Anillo Único.
+                </td>
+                <td class="annoCelda">Acción</td>
+                <td>
+                  <button class="btnEditar">
+                    <img class="iconos" src="assets/editar.png" alt="" />
+                  </button>
+
+                  <button class="btnEliminar">
+                    <img class="iconos" src="assets/delete.png" alt="" />
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <img class="banner" src="assets/bannerDer.png" alt="" />
+    </div>
+
+    <footer>
+      <h1>Footer</h1>
+
+      <!-- <img class="bannerArribaAbajo" src="assets/bannerArribaAbajo.gif" alt=""> -->
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
